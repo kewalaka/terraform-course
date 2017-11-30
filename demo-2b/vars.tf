@@ -1,14 +1,15 @@
 variable "AWS_ACCESS_KEY" {}
 variable "AWS_SECRET_KEY" {}
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "ap-southeast-2"
 }
 variable "WIN_AMIS" {
   type = "map"
   default = {
-    us-east-1 = "ami-30540427"
-    us-west-2 = "ami-9f5efbff"
-    eu-west-1 = "ami-7ac78809"
+    us-east-1      = "ami-30540427"
+    us-west-2      = "ami-343ef84c"
+    eu-west-1      = "ami-7ac78809"
+    ap-southeast-2 = "ami-42638120"
   }
 }
 
@@ -22,3 +23,4 @@ variable "INSTANCE_USERNAME" {
   default = "Terraform"
 }
 variable "INSTANCE_PASSWORD" { }
+
